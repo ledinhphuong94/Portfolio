@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pictures Gallery</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin:0;
+			padding:0;	
+			font-family:sans-serif, arial;
+		}
+		.title{
+			margin-top:40px;
+			text-align: center;
+		}
+		.container{
+			width:100%;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.row{
+			margin-top: 30px;
+			width:60%;
+			border:2px black solid;
+			display:flex;
+			flex-direction: row;
+			padding:0 4px;
+			flex-wrap:wrap;
+			justify-content: space-around;
+		}	
+		.column{
+			flex: 25%;
+			max-width: 25%;
+			padding:0 4px;
+			margin-bottom: 8px;
+
+		}
+		.row img{
+			width:100%;
+			padding-top:8px;
+			vertical-align:center;
+			transition: all 0.8s;
+			opacity:0.8;
+		}
+		.row img:hover{
+			transform:scale(0.9);
+			opacity:1;
+		}
+		@media(max-width:800px){
+		.column{
+			flex: 50%;	
+			max-width: 50%;
+		}
+		@media(max-width:500px){
+		.column{
+			flex: 100%;	
+			max-width: 100%;
+		}
+
+	</style>
+</head>
+<body>
+	<h2 class="title"><a href="../index.html">Pictures Galery</a></h2>
+	<div class="container">
+		<div class="row">
+			<div class="column column1">
+				<img src="images/pic.jpg">
+				<img src="images/pic1.jpg">
+				<img src="images/pic3.jpg">
+				<img src="images/pic4.jpg">
+				<img src="images/pic5.jpg">
+			</div>
+			<div class="column column2">
+				<img src="images/pic5.jpg">
+				<img src="images/pic4.jpg">
+				<img src="images/pic3.jpg">
+				<img src="images/pic2.jpg">
+				
+			</div>
+			<div class="column column3">
+				<img src="images/pic.jpg">
+				<img src="images/pic1.jpg">
+				<img src="images/pic3.jpg">
+				<img src="images/pic4.jpg">
+				<img src="images/pic5.jpg">
+			</div>
+			<div class="column column4">
+				<img src="images/pic5.jpg">
+				<img src="images/pic4.jpg">
+				<img src="images/pic3.jpg">
+				<img src="images/pic2.jpg">
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
